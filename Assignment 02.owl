@@ -1,0 +1,804 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.laptop.com/ontologies/laptop.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.laptop.com/ontologies/laptop.owl">
+    <Prefix name="" IRI="http://www.laptop.com/ontologies/laptop.owl"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">This laptop ontology describes about laptop</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#AMD"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Battery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Brand"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CardType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Color"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Design"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GPU"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GPUSize"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GrahicCard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Intel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Laptop"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mac"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OperationSystem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Processor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RAM"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Screen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ScreenSize"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ScreenType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Storage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StorageSize"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StorageType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UnitName"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Weight"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Windows"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasBattery"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasBrand"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDesignColor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDesignWeight"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasGPUCardType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasGPUGraphicCard"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasOperationSystem"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasProcessor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasProcessorAMD"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasProcessorIntel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRAM"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasScreen"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasStorageSize"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasStorageType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isBatteryOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isBrandOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isDesignColorOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isDesignWeightOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isGPUCardTypeOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isGPUGraphicCardOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isOperatioSystemOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isProcessorAMDOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isProcessorIntelOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isProcessorOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isRAMOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isScreenOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isStorageSizeOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isStorageTypeOf"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasBattery"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasWeight"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#AMD"/>
+        <Class IRI="#Processor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Brand"/>
+        <Class IRI="#Laptop"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CardType"/>
+        <Class IRI="#GPU"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Color"/>
+        <Class IRI="#Design"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GPUSize"/>
+        <Class IRI="#GPU"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GrahicCard"/>
+        <Class IRI="#GPU"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Intel"/>
+        <Class IRI="#Processor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Laptop"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasBattery"/>
+            <Class IRI="#Battery"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Laptop"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasBrand"/>
+            <Class IRI="#Brand"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Laptop"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasDesignColor"/>
+            <Class IRI="#Color"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Laptop"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasDesignWeight"/>
+            <Class IRI="#Weight"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Laptop"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasGPUGraphicCard"/>
+            <Class IRI="#GrahicCard"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Laptop"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasProcessor"/>
+            <Class IRI="#Processor"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Laptop"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRAM"/>
+            <Class IRI="#RAM"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Laptop"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasScreen"/>
+            <Class IRI="#Screen"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Laptop"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasStorageSize"/>
+            <Class IRI="#StorageSize"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Laptop"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasStorageType"/>
+            <Class IRI="#StorageType"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mac"/>
+        <Class IRI="#OperationSystem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ScreenSize"/>
+        <Class IRI="#Screen"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ScreenType"/>
+        <Class IRI="#Screen"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StorageSize"/>
+        <Class IRI="#Storage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StorageType"/>
+        <Class IRI="#Storage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UnitName"/>
+        <Class IRI="#Laptop"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Weight"/>
+        <Class IRI="#Design"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Windows"/>
+        <Class IRI="#OperationSystem"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#AMD"/>
+        <Class IRI="#Intel"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Battery"/>
+        <Class IRI="#Design"/>
+        <Class IRI="#GPU"/>
+        <Class IRI="#Laptop"/>
+        <Class IRI="#OperationSystem"/>
+        <Class IRI="#Processor"/>
+        <Class IRI="#RAM"/>
+        <Class IRI="#Screen"/>
+        <Class IRI="#Storage"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Brand"/>
+        <Class IRI="#UnitName"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CardType"/>
+        <Class IRI="#GPUSize"/>
+        <Class IRI="#GrahicCard"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Color"/>
+        <Class IRI="#Weight"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#GPUSize"/>
+        <Class IRI="#GrahicCard"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Mac"/>
+        <Class IRI="#Windows"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ScreenSize"/>
+        <Class IRI="#ScreenType"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#StorageSize"/>
+        <Class IRI="#StorageType"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasBrand"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasDesignColor"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasDesignWeight"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasGPUCardType"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasGPUGraphicCard"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasOperationSystem"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasProcessor"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasProcessorAMD"/>
+        <ObjectProperty IRI="#hasProcessor"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasProcessorIntel"/>
+        <ObjectProperty IRI="#hasProcessor"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasRAM"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasScreen"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasStorageSize"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasStorageType"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isBatteryOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isBrandOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isDesignColorOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isDesignWeightOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isGPUCardTypeOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isGPUGraphicCardOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isOperatioSystemOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isProcessorAMDOf"/>
+        <ObjectProperty IRI="#isProcessorOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isProcessorIntelOf"/>
+        <ObjectProperty IRI="#isProcessorOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isProcessorOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isRAMOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isScreenOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isStorageSizeOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isStorageTypeOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasBattery"/>
+        <ObjectProperty IRI="#isBatteryOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasBrand"/>
+        <ObjectProperty IRI="#isBrandOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasDesignColor"/>
+        <ObjectProperty IRI="#isDesignColorOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasDesignWeight"/>
+        <ObjectProperty IRI="#isDesignWeightOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasGPUCardType"/>
+        <ObjectProperty IRI="#isGPUCardTypeOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasGPUGraphicCard"/>
+        <ObjectProperty IRI="#isGPUGraphicCardOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasOperationSystem"/>
+        <ObjectProperty IRI="#isOperatioSystemOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasProcessor"/>
+        <ObjectProperty IRI="#isProcessorOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasProcessorAMD"/>
+        <ObjectProperty IRI="#isProcessorAMDOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasProcessorIntel"/>
+        <ObjectProperty IRI="#isProcessorIntelOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasRAM"/>
+        <ObjectProperty IRI="#isRAMOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasScreen"/>
+        <ObjectProperty IRI="#isScreenOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasStorageSize"/>
+        <ObjectProperty IRI="#isStorageSizeOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasStorageType"/>
+        <ObjectProperty IRI="#isStorageTypeOf"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasDesignWeight"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasOperationSystem"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasProcessor"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasScreen"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isDesignWeightOf"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isOperatioSystemOf"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isProcessorOf"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isScreenOf"/>
+    </FunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#hasDesignWeight"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#hasOperationSystem"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#hasProcessor"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#hasScreen"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#isDesignWeightOf"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#isOperatioSystemOf"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#isProcessorOf"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#isScreenOf"/>
+    </InverseFunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasBattery"/>
+        <Class IRI="#Laptop"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasBrand"/>
+        <Class IRI="#Laptop"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDesignColor"/>
+        <Class IRI="#Laptop"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDesignWeight"/>
+        <Class IRI="#Laptop"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasGPUCardType"/>
+        <Class IRI="#Laptop"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasGPUGraphicCard"/>
+        <Class IRI="#Laptop"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasOperationSystem"/>
+        <Class IRI="#Laptop"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasProcessor"/>
+        <Class IRI="#Laptop"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasProcessorAMD"/>
+        <Class IRI="#Laptop"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasProcessorIntel"/>
+        <Class IRI="#Laptop"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRAM"/>
+        <Class IRI="#Laptop"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasScreen"/>
+        <Class IRI="#Laptop"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasStorageSize"/>
+        <Class IRI="#Laptop"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasStorageType"/>
+        <Class IRI="#Laptop"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isBatteryOf"/>
+        <Class IRI="#Battery"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isBrandOf"/>
+        <Class IRI="#Brand"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isDesignColorOf"/>
+        <Class IRI="#Color"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isDesignWeightOf"/>
+        <Class IRI="#Weight"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isGPUCardTypeOf"/>
+        <Class IRI="#CardType"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isGPUGraphicCardOf"/>
+        <Class IRI="#GrahicCard"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isOperatioSystemOf"/>
+        <Class IRI="#OperationSystem"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isProcessorAMDOf"/>
+        <Class IRI="#AMD"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isProcessorIntelOf"/>
+        <Class IRI="#Intel"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isProcessorOf"/>
+        <Class IRI="#Processor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isRAMOf"/>
+        <Class IRI="#RAM"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isScreenOf"/>
+        <Class IRI="#Screen"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isStorageSizeOf"/>
+        <Class IRI="#StorageSize"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isStorageTypeOf"/>
+        <Class IRI="#StorageType"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasBattery"/>
+        <Class IRI="#Battery"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasBrand"/>
+        <Class IRI="#Brand"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDesignColor"/>
+        <Class IRI="#Color"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDesignWeight"/>
+        <Class IRI="#Weight"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasGPUCardType"/>
+        <Class IRI="#CardType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasGPUGraphicCard"/>
+        <Class IRI="#GrahicCard"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasOperationSystem"/>
+        <Class IRI="#OperationSystem"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasProcessor"/>
+        <Class IRI="#Processor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasProcessorAMD"/>
+        <Class IRI="#AMD"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasProcessorIntel"/>
+        <Class IRI="#Intel"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRAM"/>
+        <Class IRI="#RAM"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasScreen"/>
+        <Class IRI="#Screen"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasStorageSize"/>
+        <Class IRI="#StorageSize"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasStorageType"/>
+        <Class IRI="#StorageType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isBatteryOf"/>
+        <Class IRI="#Laptop"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isBrandOf"/>
+        <Class IRI="#Laptop"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isDesignColorOf"/>
+        <Class IRI="#Laptop"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isDesignWeightOf"/>
+        <Class IRI="#Laptop"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isGPUCardTypeOf"/>
+        <Class IRI="#Laptop"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isGPUGraphicCardOf"/>
+        <Class IRI="#Laptop"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isOperatioSystemOf"/>
+        <Class IRI="#Laptop"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isProcessorAMDOf"/>
+        <Class IRI="#Laptop"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isProcessorIntelOf"/>
+        <Class IRI="#Laptop"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isProcessorOf"/>
+        <Class IRI="#Laptop"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isRAMOf"/>
+        <Class IRI="#Laptop"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isScreenOf"/>
+        <Class IRI="#Laptop"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isStorageSizeOf"/>
+        <Class IRI="#Laptop"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isStorageTypeOf"/>
+        <Class IRI="#Laptop"/>
+    </ObjectPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasBattery"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasWeight"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
